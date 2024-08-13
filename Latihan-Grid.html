@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100vh;
+        }
+        .grid-item {
+            border: 1px solid black;
+            text-align: center;
+            align-content: center;
+        }
+        .name {
+            grid-column: 1/2;
+            font-family: "Bungee Tint", sans-serif;
+            font-size: larger;
+        }
+        .link {
+            grid-column: 2/4;
+        }
+        .link nav {
+            display: flex;
+            justify-content: center;
+        }
+        .link nav a {
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+            font-family: "New Amsterdam", sans-serif;
+            font-size: x-large;
+        }
+        .tombol {
+            grid-column: 4/5;
+        }
+        .tombol button {
+            font-family: "New Amsterdam", sans-serif;
+            font-size: x-large;
+            color: black;
+            background-color: lightgrey;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .bio {
+            grid-column: 1/4;
+            grid-row: 2/10;
+            justify-content: center;
+            align-items: center;
+            font-family: "New Amsterdam", sans-serif;
+            font-size: larger;
+            background-image: url(pic2.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30%;
+        }
+        .text {
+            text-align: right;
+            padding-right: 3%;
+        }
+        .bio .text h2 {
+            font-family: "Bungee Tint", sans-serif;
+        }
+        .foto {
+            grid-row: 2/10;
+            background-image: url(pictures.jpeg);
+            background-size: cover;
+            background-position: absolute;
+        }
+        .kaki {
+            grid-column: 1/5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item name">
+            <h1>Ilyas</h1>
+        </div>
+        <div class="grid-item link">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Collection</a>
+            </nav>
+        </div>
+        <div class="grid-item tombol">
+            <button>Contact</button>
+        </div>
+        <div class="grid-item bio">
+            <div class="text">
+                <p>Hello Everyone! My Name Is...</p>
+                <h2>ILYAS FEBRIAN</h2>
+                <p>
+                    I'm a Student from Makassar State University in Indonesia since 2021. <br>
+                    I was born in 2003 in Makassar, so yeah, Makassar is my Hometown. <br>
+                    I'm into programming since I was still in Junior High in 2018, <br>
+                    I found it interesting but I didn't have a mentor so it was so messed up before. <br>
+                    2024, now I have a mentor, and I'm ready to take on the next level of PROGRAMMING. <br>
+                </p>
+            </div>
+        </div>
+        <div class="grid-item foto">
+        </div>
+        <div class="grid-item kaki">
+            <p>
+                &copy;Copyright Ilyas Febrian 2024
+            </p>
+            <p>
+                Github
+            </p>
+        </div>
+    </div>
+</body>
+</html>
